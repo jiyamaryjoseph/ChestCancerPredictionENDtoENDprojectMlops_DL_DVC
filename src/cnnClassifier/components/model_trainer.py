@@ -65,6 +65,16 @@ class Training:
     @staticmethod
     def save_model(path: Path, model: tf.keras.Model):
         model.save(path)
+        
+        model_dir = 'model'
+        os.makedirs(model_dir, exist_ok=True)
+        
+       
+        model_file_path = os.path.join(model_dir, 'model.h5')  
+        
+        model.save(model_file_path)
+       
+        
 
 
 
@@ -83,5 +93,6 @@ class Training:
 
         self.save_model(
             path=self.config.trained_model_path,
-            model=self.model
+            model=self.model,
+            
         )
