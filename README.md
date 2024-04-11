@@ -23,3 +23,6 @@ export MLFLOW_TRACKING_URI=https://dagshub.com/entbappy/chest-Disease-Classifica
 export MLFLOW_TRACKING_USERNAME=jiyamaryjoseph 
 
 export MLFLOW_TRACKING_PASSWORD=ada2932b15075505eaac102482136b4f730678e3
+
+
+ecr uri:891377073344.dkr.ecr.ap-southeast-2.amazonaws.com/chestcancerpred
